@@ -94,20 +94,20 @@
 \section{Skills}
  \resumeSubHeadingListStart
     \resumeSubItem{Coding}
-      {C (Proficient), Python (Intermediate), Java (Intermediate), MATLAB (Proficient)}
+      {C (Proficient), Python, Java, MATLAB (Proficient)}
     \resumeSubItem{Skills}
-      {Git, Embedded system, Shell/scripting, Linux Performance counter, Altera Quartus, LaTeX, VS Code}
+      {Git, Embedded system, Shell/scripting, perf, Linux Performance counter, Altera Quartus, LaTeX, power and timing measure, parallel programming, Visual Studio Code, vim}
     \resumeSubItem{Languages}
-      {Chinese (Native), English (Full professional), Cantonese (Native), Japanese (Basic)}
+      {Chinese (Native), English (Full professional), Cantonese (Native), Japanese}
  \resumeSubHeadingListEnd
  
  %-----------Honors/Awards-----------------
 \section{Honors \& Awards}
 \resumeSubHeadingListStart
- 	\resumeSubItem{Publishing in-process paper: Comparing Power and Energy Usage for Scientific Calculation with and without GPU Acceleration on a Raspberry Pi Model B+ and 3B (2018.03) ICOMP'18}
+ 	\resumeSubItem{IEEE publishing in-process paper: Comparing Power and Energy Usage for Scientific Calculation with and without GPU Acceleration on a Raspberry Pi Model B+ and 3B (2018.03) ICOMP'18}
     {Explored the power and energy usage of the GPGPU on the Raspberry Pi and compared with them to the same calculation performed only on their CPUs. Developed 6 benchmarks to do 1D \& 2D FFT with and without GPU rendering using 3 mathematical libraries. The calculation was using single precision floating point numbers. https://csce.ucmss.com/cr/books/2018/AuthorsReport?ConferenceKey=ICM}
       
-    \resumeSubItem{IEEE published paper: Raspberry Pi 2 B+ GPU Power, Performance, and Energy Implications (2017.03, 1 Paper citation), CSCI'16}
+    \resumeSubItem{IEEE published paper: Raspberry Pi 2 B+ GPU Power, Performance, and Energy Implications (2017.03, 1 citation count), CSCI'16}
     {Correlated graphics processing, CPU load, power consumption, and total energy. Measured the power consumption difference between GPU rendering and CPU rendering by using different benchmarks both with and without the GPU rendering and an Adafruit USB Power Gauge. https://ieeexplore.ieee.org/document/7881331/}
       
     \resumeSubItem{Henry \& Grace Butler Award Scholarship (2016.08)}
@@ -117,14 +117,32 @@
 %-----------PROJECTS-----------------
 \section{Projects}
 \resumeSubHeadingListStart
-    \resumeSubItem{Using Message Passing Interface (MPI) for a large-scale image segmentation on a Distributed-memory cluster system(2017.05)}
-    {Developed a benchmark that used the specific matrices to multiply each pixel of the input image and change the pixel value for image segmentation. Used MPI for large-scale image processing.}
-
-    \resumeSubItem{Fuzzy logic controller for a rice cooker(2015.05)}
+    \resumeSubItem{Parallelize computing using Message Passing Interface (MPI), CUDA, OpenMP, Pthreads for large-scale image segmentation on a Distributed-memory cluster system (2017.05)}
+    {Developed a benchmark that used the specific matrices to multiply each pixel of the input image and change the pixel value for image segmentation. Used MPI, CUDA, OpenMP, Pthreads for large-scale image processing.}
+    
+    \resumeSubItem{Application of mathematical and numerical methods to Electrical Engineering problems practice in MATLAB (2016.12)}
+    {Sufficient background in common numerical methods, interpolation problems, numerical integration problems, differentiation problems, ordinary differential equation problems, utilize algorithms appropriately and recognize their strength and weaknesses. Solving simple linear, nonlinear and dynamic electric circuits.}
+    
+    \resumeSubItem{Computer simulation and physical modeling, from development to display in Java (2016.12)}
+    {Applying equations to physical modeling simulation including: projectiles, orbits, Simple Harmonic Oscillator (SHO), Maxima, Molecules. Familiar with algebraic manipulation of equations, integration and differentiation of functions, and differential equations.}
+    
+    \resumeSubItem{Fuzzy logic controller for a rice cooker using MATLAB (2015.05)}
     {The controller used MATLAB Fuzzy logic toolkit to process the cooking while maintaining the temperature in a range instead of setting a threshold. Optimized Fuzzy logic for auto-adjustable process. Features: Fuzzy logic preheat function, Fuzzy logic cooking process temperature controller.}
     
     \resumeSubItem{A simple 5-stage pipeline processor in Altera Quartus II (2014.12)}
-    {Built the virtual processor from scratch and downloaded to test board. Features: mathematical calculation, Read-Write Memory, overcome Data Hazards.}
+    {Built the virtual processor from scratch and downloaded to test board. Five stages have their respective duty: Intruction Fetch (IF), Instruction Decode (ID), Execution (E), Data Memory Access (M), Write Back Stage (WB). Units includes: Forwarding Unit, Hazard Detection Unit, Controls, ALU-Control Unit. Features: mathematical calculation, Read-Write Memory, overcome Data Hazards.}
+    
+    % ECE574: Cluster Computing CUDA
+    % ECE523 Mathematical Methods in Electrical Engineering Duane Hanselman
+    % COS515 Topics in Scientific Computing: Computer Simulation and Modeling, from Development to Display Physical models
+    % ECE571 Advanced Microprocessor-Based Design Vincent Weaver
+    % ECE573 Microprogramming and computer architecture
+    % ECE473 Computer Architecture and Organization
+    % ECE598: Advanced Operating Systems
+    % ECE486 DSP
+    % ECE515 Random Variables/Stoch Proc
+    % ECE577 Fuzzy logic
+    % ECE478 Industrial computer control (Minecraft relay logic)
 
   % \resumeSubItem{QuantSoftware Toolkit}
   %   {Open source python library for financial data analysis and machine learning for finance.}
@@ -167,7 +185,7 @@
         \resumeItemListStart
         \resumeItem{Assemble desktop computer power supply}
         {Proficient knowledge of the product's internal structure, quality control, assembly sequence, static protection, auto quick solder, storage optimization, and product durability test.}
-      \resumeItemListEnd
+        \resumeItemListEnd
 
     % \resumeSubheading
     %   {Google}{Mountain View, CA}
