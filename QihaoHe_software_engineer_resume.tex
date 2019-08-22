@@ -62,25 +62,26 @@
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+%\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
+\newcommand{\resumeSubHeadingListStart}{}
+%\newcommand{\resumeItemListEnd}{}
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
 %----------HEADING-----------------
 {\Large \textbf{Qihao He}} \vspace{1.5pt}\\
-\faHome\,\href{https://www.google.com/maps/place/56+Danforth+Ave,+Jersey+City,+NJ+07305/}{56 Danforth Ave, Jersey City, NJ 07305}\,
+{56 Danforth Ave, Jersey City, NJ 07305}\, \|
     % & Address: 3416 Primrose Dr, Rochester Hills, MI 48307\\
     % 56 Danforth Ave, Jersey City, NJ 07305
     % 1730 Mt Rainier Ave, Milpitas, CA 95035
-\faEnvelope\,\href{mailto:qihao.he4@gmail.com}{qihao.he4@gmail.com}\,
-\faPhone\,2075709742\, 
-\faLinkedin\,\href{https://www.linkedin.com/in/qihao-he/}{Qihao-He}\, 
-\faGithub\,\href{https://github.com/Qihao-He}{Qihao-He}
+{qihao.he4@gmail.com}\, \|
+ 2075709742\, \|
+% \faLinkedin\,\href{https://www.linkedin.com/in/qihao-he/}{Qihao-He}\, 
+{github.com/Qihao-He}
 
 %-----------EDUCATION-----------------
 \section{Education}
@@ -97,30 +98,39 @@
 %-----------Work EXPERIENCE-----------------
 \section{Work Experience}
   \resumeSubHeadingListStart
-    \resumeSubheading
-    {Kubernetes LLC}{Palo Alto, CA, USA}
-    {Software Development Internship}{2019.07 -- present}
     
-    \resumeItemListStart
+    \resumeSubheading
+    {Kubernetes LLC}{Remote work}
+    {Software Development Engineer}{2019.06 -- present}
+    \resumeItemListStart[itemsep=-2pt]
+        \resumeItem {Data ETL}
+        \item{Generated SQL queries, stored procedures views to create user performance reports to senior management.}
         \resumeItem{Mobile app development}
-        {Mobile app development using Flutter.}
+        \item{Used Flutter to build social networking service mobile app to serve over 10 thousands users.}
+        \item{Implemented Firebase Cloud Messaging to push notification to users.}
+        \item{Built UI and wired up with Google Firebase cloud hosting PostgreSQL DB.}
+        \item{Built and used existed APIs to fetch around 5 Millions data from PostgreSQL DB.}
+        \item{Improved code quality using bloc stream control to manage data sharing between widgets.}
     \resumeItemListEnd
     
-    \resumeSubheading
-        {University of Maine}{Orono, ME, USA}
-        {Volunteer Internship in the Advanced Computing Group of UMaine}{2016.01 -- 2017.12, 2018.09 -- 2019.06}
+    
+    % \resumeSubheading
+    %     {University of Maine}{Orono, ME, USA}
+    %     {Volunteer Internship in the Advanced Computing Group of UMaine}{2016.01 -- 2017.12, 2018.09 -- 2019.06}
         
-        \resumeItemListStart
-            \resumeItem{Maine Learn To Mod (NSF)}
-                {Front-end User Interface virtual input keys and \textbf{Back-end server} script development; \textbf{OpenStack (IAAS) dashboard project management}; Correlate \textbf{Apache Guacamole}, Minecraft with \textbf{OpenStack Virtual Machine}.}
+        % \resumeItemListStart
+        %     \resumeItem{Maine Learn To Mod (NSF)}
+        %         \item{}
+        %         {Front-end User Interface virtual input keys and \textbf{Back-end server} script development; \textbf{OpenStack (IAAS) dashboard project management};
+        %         Correlate \textbf{Apache Guacamole}, Minecraft with \textbf{OpenStack Virtual Machine}.}
             
-            \resumeItem{Visual wall}
-                {Built the high-resolution 6K TV wall for high-density scientific data demonstration, including RAID hard drive mirror backup, clone hard drive DD, system assemble, and VNC software key-pair.}
-        \resumeItemListEnd
+            % \resumeItem{Visual wall}
+            %     {Built the high-resolution 6K TV wall for high-density scientific data demonstration, including RAID hard drive mirror backup, clone hard drive DD, system assemble, and VNC software key-pair.}
+        % \resumeItemListEnd
 
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-    \textit{\small Teaching Assistant in Electrical \& Computer Engineering} & \textit{\small 2016.01 -- 2017.12}
-    \end{tabular*}\vspace{-5pt}
+    % \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    % \textit{\small Teaching Assistant in Electrical \& Computer Engineering} & \textit{\small 2016.01 -- 2017.12}
+    % \end{tabular*}\vspace{-5pt}
         % \resumeItemListStart
         
         % \resumeItem{Introduction to Robotics}
@@ -135,7 +145,8 @@
         \resumeItemListStart
         
         \resumeItem{Client Information Database}
-            {Rebuilt the client information \textbf{database} using MS Access; essential knowledge of \textbf{SQL database}.}
+            {Rebuilt the client information database using Microsoft SQL server.}
+        % To do: SSIS and Microsoft server.
         
         \resumeItemListEnd
 
@@ -163,20 +174,35 @@
 \section{Projects}
 \resumeSubHeadingListStart
     % ECE574: Cluster Computing
-    \resumeSubItem{Event Recommendation System}
-        {Developed a \textbf{Full-stack} project that features \textbf{event recommendation} based on client info and interest. Improved \textbf{UX} on only using Ticketmaster. Establishing the Java Tomcat server and handle Geo input and filter information from the \textbf{HTTP server}. Built \textbf{Front-end} using \textbf{HTML}, \textbf{CSS} and \textbf{JS} and \textbf{Back-end server} and \textbf{MySQL, MongoDB DBMS}.}
-
-    \resumeSubItem{2 IEEE papers: GPU rendering for Scientific Calculation on Raspberry Pi Models (2018, 2016)}
-        {Explored the power and energy usage of the GPGPU on the Raspberry Pi and compared with them to the same calculation performed only on their CPUs. Developed 6 \textbf{benchmarks} to do 1D \& 2D FFT with and without \textbf{GPU rendering} using 3 \textbf{Python} and \textbf{C} libraries. The calculation was using single precision floating point numbers.}
     
-   
-    % ECE574: Cluster Computing
-    \resumeSubItem{Parallel computing using Message Passing Interface(MPI),CUDA, OpenMP, Pthreads for large-scale image segmentation on a Distributed-memory cluster system (2017.05)}
-        {Developed a benchmark that used the specific matrices to multiply each pixel of the input image and change the pixel value for image segmentation. Used \textbf{MPI, CUDA, OpenMP, Pthreads} for \textbf{large-scale image processing}.}
+    % MEASURE WITH NUMBERS
+    
+    \resumeSubItem{Event Recommendation System}{}
+    \begin{itemize}[itemsep=-2pt]
+        \item{Developed a single page application for users to search for events and purchase tickets (\textbf{HTML}, \textbf{CSS}, \textbf{JavaScript}, \textbf{AJAX}.}
+        %\item{ Improved \textbf{UX} on only using Ticketmaster.}
+        \item{Created 6 Java \textbf{servlets} with \textbf{RESTful APIs} to handle HTTP requests and responses.}
+        \item{Designed a \textbf{content-based algorithm} for the recommendation.}
+        \item{Built \textbf{MySQL} and \textbf{NoSQL} databases for user authentication and user-item interaction logging.}
+    \end{itemize}
+    \resumeSubItem{React JS based NBA Player Strength Visualization}{}
+    \resumeItemListStart [itemsep=-2pt]
+     \item{Created a dashboard using \textbf{React}, \textbf{D3} and \textbf{Ant Design} integrated with stats.nba.com APIs to fetch individual player's shot data.}
+     \item{Created 4 extra \textbf{filters} and 2 shot \textbf{themes} ( hexbin and scatter) to provide more customized visualization on the chart.}
+     \item{Developed an autocompletable player's \textbf{search bar} offering a list of players( images and names) in the suggestion list.}
+    % \item{Built a backend server using \textbf{Express.js} for hosting app and forwarding requests (bypassing CORS restriction).}
+   \resumeItemListEnd
+
+    % \resumeSubItem{2 IEEE papers: GPU rendering for Scientific Calculation on Raspberry Pi Models (2018, 2016)}
+    %     {Explored the power and energy usage of the GPGPU on the Raspberry Pi and compared with them to the same calculation performed only on their CPUs. Developed 6 \textbf{benchmarks} to do 1D \& 2D FFT with and without \textbf{GPU rendering} using 3 \textbf{Python} and \textbf{C} libraries. The calculation was using single precision floating point numbers.}
+    
+    % % ECE574: Cluster Computing
+    % \resumeSubItem{Parallel computing using Message Passing Interface(MPI),CUDA, OpenMP, Pthreads for large-scale image segmentation on a Distributed-memory cluster system (2017.05)}
+    %     {Developed a benchmark that used the specific matrices to multiply each pixel of the input image and change the pixel value for image segmentation. Used \textbf{MPI, CUDA, OpenMP, Pthreads} for \textbf{large-scale image processing}.}
         
-    % COS515 Topics in Scientific Computing: Computer Simulation and Modeling, from Development to Display Physical models
-    \resumeSubItem{Computer simulation and physical modeling, from development to display in Java (2016.12)}
-        {Built \textbf{Minimum Valid Product(MVP)} \textbf{OOD}, simulate and display molecule level physical model using advanced mathematics and physics.}
+    % % COS515 Topics in Scientific Computing: Computer Simulation and Modeling, from Development to Display Physical models
+    % \resumeSubItem{Computer simulation and physical modeling, from development to display in Java (2016.12)}
+    %     {Built \textbf{Minimum Valid Product(MVP)} \textbf{OOD}, simulate and display molecule level physical model using advanced mathematics and physics.}
         
     % \resumeSubItem{IEEE paper: Raspberry Pi 2 B+ GPU Power, Performance, and Energy Implications (2017.03), CSCI'16}
     %     {Correlated graphics processing, CPU load, power consumption and total energy. Measured the power consumption difference between GPU and CPU rendering by using different \textbf{benchmarks} both with and without the \textbf{GPU rendering} and an Adafruit USB Power Gauge.}
@@ -213,21 +239,21 @@
 
 %--------SKILLS------------
 \section{Skills}
- \resumeSubHeadingListStart
-    \resumeSubItem{Coding}
-      {\textbf{Java}(proficient), \textbf{Dart}, \textbf{JS}, Python, C}
+\begin{itemize}[leftmargin=*]
+    \resumeSubItem{Databse} 
+    {\textbf{SQL}, \textbf{MySQL}, PostgreSQL, SSIS}
+    \resumeSubItem{Programming language}
+      {\textbf{JavaScript}, \textbf{Java}, \textbf{Dart}, Python, C}
     \resumeSubItem{Front-end web, iOS, Android}
-      {\textbf{React}, \textbf{JS}, HTML, CSS, \textbf{Flutter}, \textbf{Dart}, \textbf{ Java}}
+      {\textbf{React}, \textbf{Flutter}, HTML, CSS}
     \resumeSubItem{Back-end}
-      {Spring Boot, \textbf{SQL}, \textbf{MySQL}, Apache Tomcat, RESTful API}
+      { Spring Boot, Apache Tomcat, RESTful API}
     % MongoDB,
     % \resumeSubItem {Mobile development} 
     %   {Flutter, Android}
     %, parallel programming}
     \resumeSubItem{Generic}
       {Git, MATLAB, Embedded system, benchMarking, Perf, Altera Quartus, LATEX}
-    \resumeSubItem{Language}
-      {English(Full professional), Chinese(Native), Cantonese(Native)}
- \resumeSubHeadingListEnd
+ \end{itemize}
 %-------------------------------------------
 \end{document}
