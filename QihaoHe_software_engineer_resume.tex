@@ -16,6 +16,7 @@
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
 \usepackage{datetime}
+\usepackage{fontawesome}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -71,121 +72,64 @@
 \begin{document}
 
 %----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-    \textbf{{\Large Qihao He}} & Email: \href{mailto:qi.he@maine.edu}{qihao.he4@gmail.com}\\
-    % & Address: 1730 Mt Rainier Ave, Milpitas, CA 95035\\
-    & Address: 3416 Primrose Dr, Rochester Hills, MI 48307\\
-    & Work(landline): 2075812247, Mobile: 2075709742\\
-    & Linkedin: https://www.linkedin.com/in/qihao-he/
-  \end{tabular*}
+{\Large \textbf{Qihao He}} \vspace{1.5pt}\\
+\faHome\,\href{https://www.google.com/maps/place/56+Danforth+Ave,+Jersey+City,+NJ+07305/}{56 Danforth Ave, Jersey City, NJ 07305}\,
+    % & Address: 3416 Primrose Dr, Rochester Hills, MI 48307\\
+    % 56 Danforth Ave, Jersey City, NJ 07305
+    % 1730 Mt Rainier Ave, Milpitas, CA 95035
+\faEnvelope\,\href{mailto:qihao.he4@gmail.com}{qihao.he4@gmail.com}\,
+\faPhone\,2075709742\, 
+\faLinkedin\,\href{https://www.linkedin.com/in/qihao-he/}{Qihao-He}\, 
+\faGithub\,\href{https://github.com/Qihao-He}{Qihao-He}
 
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
     {University of Maine}{Orono, ME, 04469, USA}
-    {Master of Science in Computer Engineering (Thesis program); GPA: 3.5}{2014.09 -- 2018.05}
+    {Master of Science in Computer Engineering (Thesis); GPA: 3.5}{2014.09 -- 2018.05}
 
     \resumeSubheading
     {Shenzhen University}{Shenzhen, Guangdong, 518000, China}
     {Bachelor of Engineering in Electrical and Electronics;  GPA: 3.1}{2010.09 -- 2014.05}
   \resumeSubHeadingListEnd
-
-%--------SKILLS------------
-\section{Skills}
- \resumeSubHeadingListStart
-    \resumeSubItem{Coding}
-      {Java(proficient), Dart, JS, Python, C}
-    \resumeSubItem{Front-end}
-      {React, Html, css, Tomcat}
-    \resumeSubItem{Back-end}
-      {SQL, Spring}
-    \resumeSubItem {Mobile} 
-      {Flutter, Android}
-    %, parallel programming}
-    \resumeSubItem{Generic}
-      {Git, Embedded system, benchMarking, Shell/scripting, Perf, Linux Performance counter, Altera Quartus}
-    \resumeSubItem{Language}
-      {English(Full professional), Chinese(Native), Cantonese(Native)}
- \resumeSubHeadingListEnd
-
-%-----------PROJECTS-----------------
-\section{Projects}
-\resumeSubHeadingListStart
-    % ECE574: Cluster Computing
-    \resumeSubItem{Event Recommendation System}
-        {Developed a \textbf{Full-stack} project that features \textbf{event recommendation} based on client info and interest. Improved \textbf{UX} on only using Ticketmaster. Establishing the Java Tomcat server and handle Geo input and filter information from the \textbf{HTTP server}. Built \textbf{Front-end} using \textbf{HTML}, \textbf{CSS} and \textbf{JS} and \textbf{Back-end server} and \textbf{MySQL, MongoDB DBMS}.}
-
-    \resumeSubItem{IEEE publishing in-process paper: Comparing Power and Energy Usage for Scientific Calculation with and without GPU Acceleration on a Raspberry Pi Model B+ and 3B (2018.03), ICOMP'18}
-        {Explored the power and energy usage of the GPGPU on the Raspberry Pi and compared with them to the same calculation performed only on their CPUs. Developed 6 \textbf{benchmarks} to do 1D \& 2D FFT with and without \textbf{GPU rendering} using 3 \textbf{Python} and \textbf{C} libraries. The calculation was using single precision floating point numbers.}
-    
-    \resumeSubItem{IEEE published paper: Raspberry Pi 2 B+ GPU Power, Performance, and Energy Implications (2017.03), CSCI'16}
-        {Correlated graphics processing, CPU load, power consumption and total energy. Measured the power consumption difference between GPU and CPU rendering by using different \textbf{benchmarks} both with and without the \textbf{GPU rendering} and an Adafruit USB Power Gauge.}
-    
-    % ECE574: Cluster Computing
-    \resumeSubItem{Parallel computing using Message Passing Interface(MPI),CUDA, OpenMP, Pthreads for large-scale image segmentation on a Distributed-memory cluster system (2017.05)}
-        {Developed a benchmark that used the specific matrices to multiply each pixel of the input image and change the pixel value for image segmentation. Used \textbf{MPI, CUDA, OpenMP, Pthreads} for \textbf{large-scale image processing}.}
-
-    % ECE473 Computer Architecture and Organization
-    \resumeSubItem{A simple 5-stage pipeline processor in Altera Quartus II (2014.12)}
-        {Built the pipeline virtual processor from scratch and downloaded to test board. Five stages: Intruction Fetch, Instruction Decode, Execution, Data Memory Access, Write Back Stage. Units included: Forwarding Unit, Hazard Detection Unit, Controls, ALU-Control Unit.}
-    % Features: mathematical calculation, Read-Write Memory, overcome Data Hazards.}
-    
-     % COS515 Topics in Scientific Computing: Computer Simulation and Modeling, from Development to Display Physical models
-    \resumeSubItem{Computer simulation and physical modeling, from development to display in Java (2016.12)}
-        {Built \textbf{Minimum Valid Product(MVP)} \textbf{OOD}, simulate and display molecule level physical model using advanced mathematics and physics.}
-    
-    % ECE577 Fuzzy logic
-    % \resumeSubItem{Fuzzy logic controller for a rice cooker using MATLAB (2015.05)}
-    %   {The controller used MATLAB Fuzzy logic toolkit to process the cooking while maintaining the temperature in a range instead of setting a threshold. Optimized Fuzzy logic for auto-adjustable process. Features: Fuzzy logic preheat, cooking process temperature controller.}
-    
-    % ECE523 Mathematical Methods in Electrical Engineering Duane Hanselman
-    % \resumeSubItem{Application of mathematical and numerical methods to Electrical Engineering problems practice in MATLAB (2016.12)}
-    %   {Sufficient background in common numerical methods, interpolation problems, numerical integration problems, differentiation problems, ordinary differential equation problems, utilize algorithms appropriately and recognize their strength and weaknesses. Solving simple linear, nonlinear and dynamic electric circuits.}
-    
-    % ECE574: Cluster Computing CUDA
-    % ECE523 Mathematical Methods in Electrical Engineering Duane Hanselman
-    % COS515 Topics in Scientific Computing: Computer Simulation and Modeling, from Development to Display Physical models
-    % ECE571 Advanced Microprocessor-Based Design Vincent Weaver
-    % ECE573 Microprogramming and computer architecture
-    % ECE473 Computer Architecture and Organization
-    % ECE598: Advanced Operating Systems
-    % ECE486 DSP
-    % ECE515 Random Variables/Stoch Proc
-    % ECE577 Fuzzy logic
-    % ECE478 Industrial computer control (Minecraft relay logic)
-
-  % \resumeSubItem{QuantSoftware Toolkit}
-  %   {Open source python library for financial data analysis and machine learning for finance.}
-\resumeSubHeadingListEnd
-
-%-----------EXPERIENCE-----------------
-\section{Experience}
+  
+%-----------Work EXPERIENCE-----------------
+\section{Work Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
+    {Kubernetes LLC}{Palo Alto, CA, USA}
+    {Software Development Internship}{2019.07 -- present}
+    
+    \resumeItemListStart
+        \resumeItem{Mobile app development}
+        {Mobile app development using Flutter.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
         {University of Maine}{Orono, ME, USA}
-        {Volunteer Internship in the Advanced Computing Group of UMaine}{2016.01 -- 2017.12, 2018.09 -- Present}
+        {Volunteer Internship in the Advanced Computing Group of UMaine}{2016.01 -- 2017.12, 2018.09 -- 2019.06}
+        
         \resumeItemListStart
-        
-        \resumeItem{Maine Learn To Mod (NSF)}
-            {Front-end User Interface virtual input keys and \textbf{Back-end server} script development; \textbf{OpenStack (IAAS) dashboard project management}; Correlate \textbf{Apache Guacamole}, Minecraft with \textbf{OpenStack Virtual Machine}.}
-        
-        \resumeItem{Visual wall}
-            {Built the high-resolution 6K TV wall for high-density scientific data demonstration, including RAID hard drive mirror backup, clone hard drive DD, system assemble, and VNC software key-pair.}
+            \resumeItem{Maine Learn To Mod (NSF)}
+                {Front-end User Interface virtual input keys and \textbf{Back-end server} script development; \textbf{OpenStack (IAAS) dashboard project management}; Correlate \textbf{Apache Guacamole}, Minecraft with \textbf{OpenStack Virtual Machine}.}
+            
+            \resumeItem{Visual wall}
+                {Built the high-resolution 6K TV wall for high-density scientific data demonstration, including RAID hard drive mirror backup, clone hard drive DD, system assemble, and VNC software key-pair.}
         \resumeItemListEnd
 
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
     \textit{\small Teaching Assistant in Electrical \& Computer Engineering} & \textit{\small 2016.01 -- 2017.12}
     \end{tabular*}\vspace{-5pt}
-        \resumeItemListStart
+        % \resumeItemListStart
         
-        \resumeItem{Introduction to Robotics}
-            {Graded robotics matrices mathematical calculations.}
+        % \resumeItem{Introduction to Robotics}
+        %     {Graded robotics matrices mathematical calculations.}
         % \resumeItem{Introduction to Programming for Engineers}
         % {Taught engineers to code, debug, compile, establish connections with test boards, run scripts, build circuit schematic, IC Pinouts, and graded them.}
-        \resumeItemListEnd
+        % \resumeItemListEnd
         
-    	\resumeSubheading
+	\resumeSubheading
         {Health Equity Alliance}{Bangor, ME, USA}
         {Volunteer Internship}{2018.05 -- 2018.08}
         \resumeItemListStart
@@ -215,5 +159,75 @@
     
   \resumeSubHeadingListEnd
 
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+    % ECE574: Cluster Computing
+    \resumeSubItem{Event Recommendation System}
+        {Developed a \textbf{Full-stack} project that features \textbf{event recommendation} based on client info and interest. Improved \textbf{UX} on only using Ticketmaster. Establishing the Java Tomcat server and handle Geo input and filter information from the \textbf{HTTP server}. Built \textbf{Front-end} using \textbf{HTML}, \textbf{CSS} and \textbf{JS} and \textbf{Back-end server} and \textbf{MySQL, MongoDB DBMS}.}
+
+    \resumeSubItem{2 IEEE papers: GPU rendering for Scientific Calculation on Raspberry Pi Models (2018, 2016)}
+        {Explored the power and energy usage of the GPGPU on the Raspberry Pi and compared with them to the same calculation performed only on their CPUs. Developed 6 \textbf{benchmarks} to do 1D \& 2D FFT with and without \textbf{GPU rendering} using 3 \textbf{Python} and \textbf{C} libraries. The calculation was using single precision floating point numbers.}
+    
+   
+    % ECE574: Cluster Computing
+    \resumeSubItem{Parallel computing using Message Passing Interface(MPI),CUDA, OpenMP, Pthreads for large-scale image segmentation on a Distributed-memory cluster system (2017.05)}
+        {Developed a benchmark that used the specific matrices to multiply each pixel of the input image and change the pixel value for image segmentation. Used \textbf{MPI, CUDA, OpenMP, Pthreads} for \textbf{large-scale image processing}.}
+        
+    % COS515 Topics in Scientific Computing: Computer Simulation and Modeling, from Development to Display Physical models
+    \resumeSubItem{Computer simulation and physical modeling, from development to display in Java (2016.12)}
+        {Built \textbf{Minimum Valid Product(MVP)} \textbf{OOD}, simulate and display molecule level physical model using advanced mathematics and physics.}
+        
+    % \resumeSubItem{IEEE paper: Raspberry Pi 2 B+ GPU Power, Performance, and Energy Implications (2017.03), CSCI'16}
+    %     {Correlated graphics processing, CPU load, power consumption and total energy. Measured the power consumption difference between GPU and CPU rendering by using different \textbf{benchmarks} both with and without the \textbf{GPU rendering} and an Adafruit USB Power Gauge.}
+    
+    % ECE473 Computer Architecture and Organization
+    % \resumeSubItem{A 5-stage pipeline processor in Altera Quartus II (2014.12)}
+    %     {Built the pipeline virtual processor from scratch and downloaded to test board. Five stages: Instruction Fetch, Instruction Decode, Execution, Data Memory Access, Write Back Stage. Units included: Forwarding Unit, Hazard Detection Unit, Controls, ALU-Control Unit.}
+    % Features: mathematical calculation, Read-Write Memory, overcome Data Hazards.}
+    
+    % ECE577 Fuzzy logic
+    % \resumeSubItem{Fuzzy logic controller for a rice cooker using MATLAB (2015.05)}
+    %   {The controller used MATLAB Fuzzy logic toolkit to process the cooking while maintaining the temperature in a range instead of setting a threshold. Optimized Fuzzy logic for auto-adjustable process. Features: Fuzzy logic preheat, cooking process temperature controller.}
+    
+    % ECE523 Mathematical Methods in Electrical Engineering Duane Hanselman
+    % \resumeSubItem{Application of mathematical and numerical methods to Electrical Engineering problems practice in MATLAB (2016.12)}
+    %   {Sufficient background in common numerical methods, interpolation problems, numerical integration problems, differentiation problems, ordinary differential equation problems, utilize algorithms appropriately and recognize their strength and weaknesses. Solving simple linear, nonlinear and dynamic electric circuits.}
+    
+    % ECE574: Cluster Computing CUDA
+    % ECE523 Mathematical Methods in Electrical Engineering Duane Hanselman
+    % COS515 Topics in Scientific Computing: Computer Simulation and Modeling, from Development to Display Physical models
+    % ECE571 Advanced Microprocessor-Based Design Vincent Weaver
+    % ECE573 Microprogramming and computer architecture
+    % ECE473 Computer Architecture and Organization
+    % ECE598: Advanced Operating Systems
+    % ECE486 DSP
+    % ECE515 Random Variables/Stoch Proc
+    % ECE577 Fuzzy logic
+    % ECE478 Industrial computer control (Minecraft relay logic)
+
+  % \resumeSubItem{QuantSoftware Toolkit}
+  %   {Open source python library for financial data analysis and machine learning for finance.}
+\resumeSubHeadingListEnd
+
+
+%--------SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+    \resumeSubItem{Coding}
+      {\textbf{Java}(proficient), \textbf{Dart}, \textbf{JS}, Python, C}
+    \resumeSubItem{Front-end web, iOS, Android}
+      {\textbf{React}, \textbf{JS}, HTML, CSS, \textbf{Flutter}, \textbf{Dart}, \textbf{ Java}}
+    \resumeSubItem{Back-end}
+      {Spring Boot, \textbf{SQL}, \textbf{MySQL}, Apache Tomcat, RESTful API}
+    % MongoDB,
+    % \resumeSubItem {Mobile development} 
+    %   {Flutter, Android}
+    %, parallel programming}
+    \resumeSubItem{Generic}
+      {Git, MATLAB, Embedded system, benchMarking, Perf, Altera Quartus, LATEX}
+    \resumeSubItem{Language}
+      {English(Full professional), Chinese(Native), Cantonese(Native)}
+ \resumeSubHeadingListEnd
 %-------------------------------------------
 \end{document}
